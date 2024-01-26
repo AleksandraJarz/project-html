@@ -19,24 +19,31 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <section class="section-hero">
-      <div class="container-hero">
-        <div class="hero-img-wrapper">
-          <div>
-            <p class="studio-hero">flower studio</p>
-          </div>
-          <img src="./images/img-hero-mob1x.jpg" alt="Flower" />
-          <div>
-            <button class="button-hero">
-              <svg class="hero-btn">
-                <use href="./icon/icons.svg#icon-btn"></use>
-              </svg>
-            </button>
-          </div>
+    <section class="container-hero">
+      <div class="section-hero">
+        <div class="content-hero">
+          <div class="items-hero">flower studio</div>
+          <img
+            class="hero-img"
+            src="./images/hero-desk1x.png"
+            srcset="
+              ./images/hero-mob1x.png 145w,
+              ./images/hero-mob2x.png 290w,
+              ./images/hero-tab1x.png 390w,
+              ./images/hero-tab2x.png 780w
+            "
+            sizes="(min-width:1280px) 390px, (min-width:768px) 390px, (min-width:320px) 145px"
+            alt="orange flower"
+          />
+          <button class="button-hero">
+            <svg class="hero-btn">
+              <use href="./icon/icons.svg#icon-btn"></use>
+            </svg>
+          </button>
         </div>
-      </div>
-      <div>
-        <h1 class="title-hero">ANEMONE</h1>
+        <div>
+          <h1 class="title-hero">ANEMONE</h1>
+        </div>
       </div>
     </section>
   </body>
